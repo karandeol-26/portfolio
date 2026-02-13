@@ -1074,37 +1074,6 @@
                 transform: translateY(-10px);
             }
         }
-
-        /* Scroll Reveal Animation */
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s ease-out;
-        }
-
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Typing Effect Cursor */
-        .typing-cursor::after {
-            content: '|';
-            animation: blink 1s step-start infinite;
-        }
-
-        @keyframes blink {
-            50% {
-                opacity: 0;
-            }
-        }
-
-        /* 3D Tilt */
-        .project-card,
-        .code-card {
-            transform-style: preserve-3d;
-            transform: perspective(1000px);
-        }
     </style>
 </head>
 
@@ -1237,7 +1206,7 @@
         <div class="projects-container">
             <span class="section-badge light">PROJECTS</span>
             <div class="projects-grid">
-                <div class="project-card reveal">
+                <div class="project-card">
                     <a href="https://www.stockd.us/" target="_blank" class="project-link">
                         <div class="project-icon">📦</div>
                         <h3>Stockd</h3>
@@ -1246,7 +1215,7 @@
                                 sponsor challenge at UGAHacks11</strong></p>
                     </a>
                 </div>
-                <div class="project-card reveal">
+                <div class="project-card">
                     <a href="https://devpost.com/software/vertex-a11y" target="_blank" class="project-link">
                         <div class="project-icon">🧑🏼‍💻</div>
                         <h3>Vertex A11y</h3>
@@ -1255,7 +1224,7 @@
                             among 1,500+ participants.</p>
                     </a>
                 </div>
-                <div class="project-card reveal">
+                <div class="project-card">
                     <a href="https://github.com/karandeol-26/Weather_Data_Aggregation_API" target="_blank"
                         style="text-decoration: none; color: inherit; display: block;">
                         <div class="project-icon">🌱</div>
@@ -1264,7 +1233,7 @@
                             including mean, min/max values, and rolling trends through clean REST endpoints.</p>
                     </a>
                 </div>
-                <div class="project-card reveal">
+                <div class="project-card">
                     <a href="https://devpost.com/software/vericura" target="_blank"
                         style="text-decoration: none; color: inherit; display: block;">
                         <div class="project-icon">🏥</div>
@@ -1283,7 +1252,7 @@
         <div class="experience-container">
             <span class="section-badge light">EXPERIENCE</span>
             <div class="experience-list">
-                <div class="experience-item reveal">
+                <div class="experience-item">
                     <div class="experience-header" onclick="this.parentElement.classList.toggle('active')">
                         <div class="experience-question">
                             <span class="experience-icon">💬</span>
@@ -1306,7 +1275,7 @@
                     </div>
                 </div>
 
-                <div class="experience-item reveal">
+                <div class="experience-item">
                     <div class="experience-header" onclick="this.parentElement.classList.toggle('active')">
                         <div class="experience-question">
                             <span class="experience-icon">💬</span>
@@ -1335,7 +1304,7 @@
         <div class="skills-container">
             <span class="section-badge">SKILLS</span>
             <div class="skills-list">
-                <div class="skill-item reveal">
+                <div class="skill-item">
                     <div class="skill-time">Expert</div>
                     <div class="skill-location">Programming</div>
                     <div class="skill-name">
@@ -1343,7 +1312,7 @@
                         <div class="skill-badge badge-red">Core Language</div>
                     </div>
                 </div>
-                <div class="skill-item reveal">
+                <div class="skill-item">
                     <div class="skill-time">Proficient</div>
                     <div class="skill-location">Web Development</div>
                     <div class="skill-name">
@@ -1351,7 +1320,7 @@
                         <div class="skill-badge badge-yellow">Frontend</div>
                     </div>
                 </div>
-                <div class="skill-item reveal">
+                <div class="skill-item">
                     <div class="skill-time">Experienced</div>
                     <div class="skill-location">Backend & APIs</div>
                     <div class="skill-name">
@@ -1359,7 +1328,7 @@
                         <div class="skill-badge badge-green">Framework</div>
                     </div>
                 </div>
-                <div class="skill-item reveal">
+                <div class="skill-item">
                     <div class="skill-time">Familiar</div>
                     <div class="skill-location">Tools & Systems</div>
                     <div class="skill-name">
@@ -1367,7 +1336,7 @@
                         <div class="skill-badge badge-yellow">DevTools</div>
                     </div>
                 </div>
-                <div class="skill-item reveal">
+                <div class="skill-item">
                     <div class="skill-time">Learning</div>
                     <div class="skill-location">Data Science</div>
                     <div class="skill-name">
@@ -1384,25 +1353,25 @@
             <div class="courses-title-badge">COURSES</div>
 
             <div class="courses-grid">
-                <div class="course-card reveal">
+                <div class="course-card">
                     <h3>Harvard CS50</h3>
                 </div>
-                <div class="course-card reveal">
+                <div class="course-card">
                     <h3>100 Days of Python Pro Bootcamp</h3>
                 </div>
-                <div class="course-card reveal">
+                <div class="course-card">
                     <h3>CS1301: Principles of Computer Science I</h3>
                 </div>
-                <div class="course-card reveal">
+                <div class="course-card">
                     <h3>CS1302: Principles of Computer Science II</h3>
                 </div>
-                <div class="course-card reveal">
+                <div class="course-card">
                     <h3>Calculus I</h3>
                 </div>
-                <div class="course-card reveal">
+                <div class="course-card">
                     <h3>Calculus II</h3>
                 </div>
-                <div class="course-card reveal">
+                <div class="course-card">
                     <h3>Discrete Mathematics</h3>
                 </div>
             </div>
@@ -1435,65 +1404,6 @@
             <p class="footer-text">© 2025 Karan Pratap Singh. Built with passion.</p>
         </div>
     </footer>
-    <script>
-        // Scroll Reveal
-        const observerOptions = {
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-        // Typing Effect
-        const textToType = "Aspiring AI/ML Engineer";
-        const typingElement = document.querySelector('.section-badge');
-        let typeIndex = 0;
-
-        function typeText() {
-            if (typeIndex < textToType.length) {
-                typingElement.textContent = textToType.substring(0, typeIndex + 1);
-                typeIndex++;
-                setTimeout(typeText, 100);
-            } else {
-                typingElement.classList.remove('typing-cursor');
-            }
-        }
-
-        // Initialize Typing
-        if (typingElement) {
-            typingElement.textContent = '';
-            typingElement.classList.add('typing-cursor');
-            setTimeout(typeText, 1000);
-        }
-
-        // 3D Tilt Effect (Vanilla JS)
-        document.querySelectorAll('.project-card, .code-card').forEach(card => {
-            card.addEventListener('mousemove', (e) => {
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
-
-                const rotateX = ((y - centerY) / centerY) * -5; // Max -5deg to 5deg
-                const rotateY = ((x - centerX) / centerX) * 5;
-
-                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
-            });
-
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
-            });
-        });
-    </script>
 </body>
 
 </html>
