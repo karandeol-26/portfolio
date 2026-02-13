@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karan Pratap Singh - Portfolio</title>
     <style>
-            /* ===== Page Load Animation ===== */
-      body {
-          animation: fadeIn 1.8s ease forwards;
-          opacity: 0;
-      }
+        /* ===== Page Load Animation ===== */
+        body {
+            animation: fadeIn 1.8s ease forwards;
+            opacity: 0;
+        }
 
-      @keyframes fadeIn {
-          to { opacity: 1; }
-      }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
 
-      .hero-left {
-          animation: slideUp 1.2s ease forwards;
-          animation-delay: 0.3s;
-          opacity: 0;
-          background-image: radial-gradient(#2d4a2c 0.7px, transparent 0.7px);
-          background-size: 30px 30px; /* Creates a subtle dot grid */
-          background-position: center;
-      }
+        .hero-left {
+            animation: slideUp 1.2s ease forwards;
+            animation-delay: 0.3s;
+            opacity: 0;
+            background-image: radial-gradient(#2d4a2c 0.7px, transparent 0.7px);
+            background-size: 30px 30px;
+            /* Creates a subtle dot grid */
+            background-position: center;
+        }
 
-      .hero-right {
-        display: flex;
-        align-items: flex-start; /* Aligns the card to the top */
-        justify-content: center;
-        position: relative;
-        padding-top: 20px; /* Optional: adds a small gap from the awning */
-     }
+        .hero-right {
+            display: flex;
+            align-items: flex-start;
+            /* Aligns the card to the top */
+            justify-content: center;
+            position: relative;
+            padding-top: 20px;
+            /* Optional: adds a small gap from the awning */
+        }
 
-      @keyframes slideUp {
-          from { transform: translateY(40px); opacity: 0; }
-          to { transform: translateY(0); opacity: 1; }
-      }
+        @keyframes slideUp {
+            from {
+                transform: translateY(40px);
+                opacity: 0;
+            }
 
-      @keyframes slideIn {
-          from { transform: translateX(40px); opacity: 0; }
-          to { transform: translateX(0); opacity: 1; }
-      }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(40px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
 
         * {
             margin: 0;
@@ -153,11 +173,13 @@
         }
 
         .hero-left {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end; /* Pushes content towards the bottom */
-          padding-bottom: 220px;    /* BUT this lifts it up from the very bottom */
-          text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            /* Pushes content towards the bottom */
+            padding-bottom: 220px;
+            /* BUT this lifts it up from the very bottom */
+            text-align: left;
         }
 
         .hero-title {
@@ -182,11 +204,11 @@
         }
 
         .hero-right {
-          display: flex;
-          align-items: flex-start; 
-          justify-content: center;
-          position: relative;
-          padding-top: 40px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            position: relative;
+            padding-top: 40px;
         }
 
         .coffee-illustration {
@@ -198,7 +220,7 @@
             align-items: center;
             justify-content: center;
             position: relative;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
         }
 
         .coffee-handle {
@@ -256,18 +278,24 @@
         }
 
         .section-badge {
-          display: inline-block;
-          padding: 0.8rem 2.5rem; /* Increased padding for a larger pill shape */
-          background: transparent;
-          border: 2px solid #2d4a2c;
-          border-radius: 50px; /* Fully rounded edges as seen in your screenshot */
-          color: #2d4a2c;
-          font-size: 1.1rem; /* Bigger font size */
-          font-weight: 700; /* Bolder text */
-          margin-bottom: 3rem; /* More space before the title starts */
-          text-transform: uppercase;
-          letter-spacing: 4px; /* More space between letters for a premium look */
-    
+            display: inline-block;
+            padding: 0.8rem 2.5rem;
+            /* Increased padding for a larger pill shape */
+            background: transparent;
+            border: 2px solid #2d4a2c;
+            border-radius: 50px;
+            /* Fully rounded edges as seen in your screenshot */
+            color: #2d4a2c;
+            font-size: 1.1rem;
+            /* Bigger font size */
+            font-weight: 700;
+            /* Bolder text */
+            margin-bottom: 3rem;
+            /* More space before the title starts */
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            /* More space between letters for a premium look */
+
         }
 
         .section-badge.light {
@@ -279,7 +307,8 @@
             background: #e8dcc8;
             padding: 2rem 2rem;
             background-image: radial-gradient(#2d4a2c 1px, transparent 1px);
-            background-size: 30px 30px; /* This matches your hero grid size */
+            background-size: 30px 30px;
+            /* This matches your hero grid size */
         }
 
         .about-container {
@@ -326,18 +355,21 @@
         }
 
         .profile-badge {
-          width: 450px;
-          height: 450px;
-          border-radius: 50%;
-          border: 8px solid #2d4a2c;
-          background: #fff;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          box-shadow: 0 20px 60px rgba(0,0,0,0.2);
-          position: relative;
-          overflow: hidden;  /* Important for circular crop */
-      }
+            width: 90vw;
+            height: 90vw;
+            max-width: 450px;
+            max-height: 450px;
+            border-radius: 50%;
+            border: 8px solid #2d4a2c;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            /* Important for circular crop */
+        }
 
         .year-badge {
             position: absolute;
@@ -351,7 +383,7 @@
             font-size: 1.5rem;
             font-weight: 700;
             border: 4px solid #e8dcc8;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
 
         .contact-email {
@@ -411,7 +443,7 @@
 
         .project-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
         }
 
         .project-icon {
@@ -437,6 +469,10 @@
             background: rgba(100, 150, 255, 0.3);
         }
 
+        .project-card:nth-child(4) .project-icon {
+            background: rgba(255, 200, 100, 0.3);
+        }
+
         .project-card h3 {
             font-size: 1.8rem;
             color: #2d4a2c;
@@ -449,7 +485,8 @@
             color: #4a3728;
             line-height: 1.7;
         }
-                /* Removes blue link color and underlines */
+
+        /* Removes blue link color and underlines */
         .project-link {
             text-decoration: none;
             color: inherit;
@@ -458,7 +495,8 @@
 
         /* The "View Project" Label logic */
         .project-card {
-            position: relative; /* Needed for the label to stay inside the card */
+            position: relative;
+            /* Needed for the label to stay inside the card */
             overflow: hidden;
         }
 
@@ -469,9 +507,12 @@
             font-size: 0.9rem;
             font-weight: bold;
             color: #2d4a2c;
-            opacity: 0; /* Hidden by default */
-            transform: translateY(10px); /* Start slightly lower */
-            transition: all 0.3s ease; /* Smooth fade and slide up */
+            opacity: 0;
+            /* Hidden by default */
+            transform: translateY(10px);
+            /* Start slightly lower */
+            transition: all 0.3s ease;
+            /* Smooth fade and slide up */
         }
 
         /* When hovering over the card, show the label */
@@ -808,27 +849,36 @@
         }
 
         @keyframes floatPhoto1 {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translate(-200px, -80px) rotate(-8deg);
             }
+
             50% {
                 transform: translate(-220px, -60px) rotate(-10deg);
             }
         }
 
         @keyframes floatPhoto2 {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translate(150px, -40px) rotate(5deg);
             }
+
             50% {
                 transform: translate(170px, -60px) rotate(7deg);
             }
         }
 
         @keyframes floatPhoto3 {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translate(-50px, 120px) rotate(-3deg);
             }
+
             50% {
                 transform: translate(-30px, 140px) rotate(-5deg);
             }
@@ -928,7 +978,9 @@
                 font-size: 3rem;
             }
 
-            .about-content, .projects-grid, .courses-grid {
+            .about-content,
+            .projects-grid,
+            .courses-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -949,15 +1001,20 @@
         html {
             scroll-behavior: smooth;
         }
+
         .code-card {
-          width: 550px; /* Increased width to match inspiration */
-          background: #0d1117; /* Darker background like inspiration */
-          border-radius: 12px;
-          border: 1px solid #30363d;
-          box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-          overflow: hidden;
-          font-family: 'JetBrains Mono', 'Fira Code', monospace;
-      }
+            width: 100%;
+            /* Increased width to match inspiration */
+            background: #0d1117;
+            /* Darker background like inspiration */
+            max-width: 550px;
+            border-radius: 12px;
+            border: 1px solid #30363d;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            font-family: 'JetBrains Mono', 'Fira Code', monospace;
+        }
+
         .code-header {
             height: 40px;
             background: #4a3728;
@@ -973,18 +1030,28 @@
             border-radius: 50%;
         }
 
-        .dot.red { background: #ff5f56; }
-        .dot.yellow { background: #ffbd2e; }
-        .dot.green { background: #27c93f; }
+        .dot.red {
+            background: #ff5f56;
+        }
+
+        .dot.yellow {
+            background: #ffbd2e;
+        }
+
+        .dot.green {
+            background: #27c93f;
+        }
 
         .code-body {
-          padding: 22px;
-          color: #e8dcc8;
-          font-size: 0.85rem; /* Slightly smaller font to help fit more content */
-          line-height: 1.4;
-          white-space: pre-wrap; /* Crucial: This wraps long lines like 'skills' */
-          word-break: break-word; 
-          margin: 0;
+            padding: 22px;
+            color: #e8dcc8;
+            font-size: 0.85rem;
+            /* Slightly smaller font to help fit more content */
+            line-height: 1.4;
+            white-space: pre-wrap;
+            /* Crucial: This wraps long lines like 'skills' */
+            word-break: break-word;
+            margin: 0;
         }
 
         .code-body span {
@@ -997,12 +1064,50 @@
         }
 
         @keyframes floatCode {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
         }
 
-      </style>
+        /* Scroll Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Typing Effect Cursor */
+        .typing-cursor::after {
+            content: '|';
+            animation: blink 1s step-start infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        /* 3D Tilt */
+        .project-card,
+        .code-card {
+            transform-style: preserve-3d;
+            transform: perspective(1000px);
+        }
+    </style>
 </head>
+
 <body>
     <nav>
         <div class="logo-container">
@@ -1052,23 +1157,23 @@
             <span class="section-badge" style="margin-bottom: 1rem;">Aspiring AI/ML Engineer</span>
             <h1 class="hero-title">Karan<br>pratap singh</h1>
             <p class="hero-tagline">"Building innovation, one line of code at a time."</p>
-            
+
             <div class="hero-actions">
                 <a href="#projects" class="open-button" style="position:static; transform:none;">View My Builds</a>
                 <a href="Karan_Pratap_Singh_Resume.pdf" class="contact-email" style="margin:0;">Download CV</a>
             </div>
 
-          
+
         </div>
         <div class="hero-right">
-                        <div class="code-card">
+            <div class="code-card">
                 <div class="code-card">
-            <div class="code-header">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-            </div>
-            <pre class="code-body"><code><span class="syntax-keyword">const</span> coder = {
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre class="code-body"><code><span class="syntax-keyword">const</span> coder = {
           <span class="syntax-prop">name:</span> <span class="syntax-string">'Karan Pratap Singh'</span>,
           <span class="syntax-prop">GPA:</span> <span class="syntax-string">'4.24'</span>,
           <span class="syntax-prop">skills:</span> [
@@ -1089,12 +1194,12 @@
             );
           }
         };</code></pre>
-        </div>
-        </div>
+                </div>
+            </div>
     </section>
 
     <div class="linkedin-cta">
-        <button onclick="window.open('https://www.linkedin.com/in/karanpratap2611/')">~~ Connect Now ~~</button>
+        <button onclick="window.open('https:www.linkedin.com/in/karanpratap2611/')">~~ Connect Now ~~</button>
     </div>
 
     <section id="about">
@@ -1103,19 +1208,28 @@
             <div class="about-content">
                 <div class="about-text">
                     <h2 class="about-title">Coding since 2020.</h2>
-                    <p>I'm a <strong>Computer Science student at Georgia State University</strong>, where I was awarded a full-ride Presidential Scholarship. My journey in tech is driven by a passion for creating accessible, impactful solutions and sharing knowledge with the community.</p>
-                    <p>From <strong>winning HackGT12's Emerging Track</strong> with an accessibility extension to authoring technical content that has reached <strong>over 2 million readers</strong>, I'm constantly exploring new ways to blend development with education and outreach.</p>
-                    <p>Currently, I am deep-diving into <strong>Large Language Models (LLMs)</strong> and <strong>High-Performance Computing (HPC)</strong>—exploring how Slurm and Kubernetes can scale the next generation of AI. I'm always looking to connect with teams building at the intersection of machine learning and social impact.</p>
-                    
+                    <p>I'm a <strong>Computer Science student at Georgia State University</strong>, where I was awarded
+                        a full-ride Presidential Scholarship. My journey in tech is driven by a passion for creating
+                        accessible, impactful solutions and sharing knowledge with the community.</p>
+                    <p>From <strong>winning HackGT12's Emerging Track</strong> with an accessibility extension to
+                        authoring technical content that has reached <strong>over 2 million readers</strong>, I'm
+                        constantly exploring new ways to blend development with education and outreach.</p>
+                    <p>Currently, I am deep-diving into <strong>Large Language Models (LLMs)</strong> and
+                        <strong>High-Performance Computing (HPC)</strong>—exploring how Slurm and Kubernetes can scale
+                        the next generation of AI. I'm always looking to connect with teams building at the intersection
+                        of machine learning and social impact.
+                    </p>
+                    <a href="mailto:karanpratap2611@gmail.com" class="contact-email">✉️ karanpratap2611@gmail.com</a>
                 </div>
                 <div class="about-image">
                     <div class="profile-badge">
-                        <img src="profile.png" alt="Karan Pratap Singh" style="width: 100%; height: 100%; object-fit: cover; border-radius: 60%;">
-          
-                        </div>
+                        <img src="profile.png" alt="Karan Pratap Singh"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 60%;">
+
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -1123,26 +1237,43 @@
         <div class="projects-container">
             <span class="section-badge light">PROJECTS</span>
             <div class="projects-grid">
-                <div class="project-card">
-                  <a href="https://devpost.com/software/vertex-a11y" target="_blank" class="project-link">
-                    <div class="project-icon">🧑🏼‍💻</div>
-                    <h3>Vertex A11y</h3>
-                    <p>Chrome extension that scans websites for ADA/WCAG accessibility violations, with automated compliance scoring powered by OpenAI API. <strong>Won Emerging Track at HackGT12</strong> among 1,500+ participants.</p>
-                  </a>
+                <div class="project-card reveal">
+                    <a href="https://www.stockd.us/" target="_blank" class="project-link">
+                        <div class="project-icon">📦</div>
+                        <h3>Stockd</h3>
+                        <p>An AI-powered inventory management solution built for Medium to Large Business owners-focused
+                            on reducing wastage and improving sustainability while maximizing profit. <strong>Won NCR
+                                sponsor challenge at UGAHacks11</strong></p>
+                    </a>
                 </div>
-                <div class="project-card">
-                  <a href="https://github.com/karandeol-26/Weather_Data_Aggregation_API" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-                    <div class="project-icon">🌱</div>
-                    <h3>Weather Microservice</h3>
-                    <p>FastAPI backend that retrieves real-time weather data and uses NumPy to compute statistics including mean, min/max values, and rolling trends through clean REST endpoints.</p>
-                  </a>
-                  </div>
-                <div class="project-card">
-                  <a href="https://devpost.com/software/vericura" target="_blank" style="text-decoration: none; color: inherit; display: block;">
-                    <div class="project-icon">🏥</div>
-                    <h3>VeriCura</h3>
-                    <p>Chrome extension that analyzes online health articles for credibility. Uses heuristic and AI-based scoring to detect misinformation, highlight risky language, verify medical sources, and suggest evidence from trusted institutions like the CDC, NIH, and Mayo Clinic in real time.</p>
-                  </a>
+                <div class="project-card reveal">
+                    <a href="https://devpost.com/software/vertex-a11y" target="_blank" class="project-link">
+                        <div class="project-icon">🧑🏼‍💻</div>
+                        <h3>Vertex A11y</h3>
+                        <p>Chrome extension that scans websites for ADA/WCAG accessibility violations, with automated
+                            compliance scoring powered by OpenAI API. <strong>Won Emerging Track at HackGT12</strong>
+                            among 1,500+ participants.</p>
+                    </a>
+                </div>
+                <div class="project-card reveal">
+                    <a href="https://github.com/karandeol-26/Weather_Data_Aggregation_API" target="_blank"
+                        style="text-decoration: none; color: inherit; display: block;">
+                        <div class="project-icon">🌱</div>
+                        <h3>Weather Microservice</h3>
+                        <p>FastAPI backend that retrieves real-time weather data and uses NumPy to compute statistics
+                            including mean, min/max values, and rolling trends through clean REST endpoints.</p>
+                    </a>
+                </div>
+                <div class="project-card reveal">
+                    <a href="https://devpost.com/software/vericura" target="_blank"
+                        style="text-decoration: none; color: inherit; display: block;">
+                        <div class="project-icon">🏥</div>
+                        <h3>VeriCura</h3>
+                        <p>Chrome extension that analyzes online health articles for credibility. Uses heuristic and
+                            AI-based scoring to detect misinformation, highlight risky language, verify medical sources,
+                            and suggest evidence from trusted institutions like the CDC, NIH, and Mayo Clinic in real
+                            time.</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -1152,7 +1283,7 @@
         <div class="experience-container">
             <span class="section-badge light">EXPERIENCE</span>
             <div class="experience-list">
-                <div class="experience-item">
+                <div class="experience-item reveal">
                     <div class="experience-header" onclick="this.parentElement.classList.toggle('active')">
                         <div class="experience-question">
                             <span class="experience-icon">💬</span>
@@ -1162,17 +1293,20 @@
                     </div>
                     <div class="experience-content">
                         <div class="experience-details">
-                            <div class="experience-meta">Georgia State University MILE Lab & Schoolhouse.world | March 2025 – Present</div>
+                            <div class="experience-meta">Georgia State University MILE Lab & Schoolhouse.world | March
+                                2025 – Present</div>
                             <ul>
-                                <li>Tutored 100+ students in Precalculus and SAT Math through structured problem-solving sessions</li>
-                                <li>Simplified complex concepts and helped improve student performance and retention in quantitative subjects</li>
+                                <li>Tutored 100+ students in Precalculus and SAT Math through structured problem-solving
+                                    sessions</li>
+                                <li>Simplified complex concepts and helped improve student performance and retention in
+                                    quantitative subjects</li>
                                 <li>Reinforced fundamentals and analytical thinking across diverse learning styles</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="experience-item">
+                <div class="experience-item reveal">
                     <div class="experience-header" onclick="this.parentElement.classList.toggle('active')">
                         <div class="experience-question">
                             <span class="experience-icon">💬</span>
@@ -1184,9 +1318,11 @@
                         <div class="experience-details">
                             <div class="experience-meta">Medium & LinkedIn | January 2023 – Present</div>
                             <ul>
-                                <li>Authored 50+ technical articles on artificial intelligence, system design, and algorithms</li>
+                                <li>Authored 50+ technical articles on artificial intelligence, system design, and
+                                    algorithms</li>
                                 <li>Reached over 2 million views by simplifying complex technical concepts</li>
-                                <li>Covered topics including machine learning, developer productivity, and software architecture</li>
+                                <li>Covered topics including machine learning, developer productivity, and software
+                                    architecture</li>
                             </ul>
                         </div>
                     </div>
@@ -1199,7 +1335,7 @@
         <div class="skills-container">
             <span class="section-badge">SKILLS</span>
             <div class="skills-list">
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <div class="skill-time">Expert</div>
                     <div class="skill-location">Programming</div>
                     <div class="skill-name">
@@ -1207,7 +1343,7 @@
                         <div class="skill-badge badge-red">Core Language</div>
                     </div>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <div class="skill-time">Proficient</div>
                     <div class="skill-location">Web Development</div>
                     <div class="skill-name">
@@ -1215,7 +1351,7 @@
                         <div class="skill-badge badge-yellow">Frontend</div>
                     </div>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <div class="skill-time">Experienced</div>
                     <div class="skill-location">Backend & APIs</div>
                     <div class="skill-name">
@@ -1223,7 +1359,7 @@
                         <div class="skill-badge badge-green">Framework</div>
                     </div>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <div class="skill-time">Familiar</div>
                     <div class="skill-location">Tools & Systems</div>
                     <div class="skill-name">
@@ -1231,7 +1367,7 @@
                         <div class="skill-badge badge-yellow">DevTools</div>
                     </div>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <div class="skill-time">Learning</div>
                     <div class="skill-location">Data Science</div>
                     <div class="skill-name">
@@ -1246,27 +1382,27 @@
     <section id="courses">
         <div class="courses-container">
             <div class="courses-title-badge">COURSES</div>
-            
+
             <div class="courses-grid">
-                <div class="course-card">
+                <div class="course-card reveal">
                     <h3>Harvard CS50</h3>
                 </div>
-                <div class="course-card">
+                <div class="course-card reveal">
                     <h3>100 Days of Python Pro Bootcamp</h3>
                 </div>
-                <div class="course-card">
+                <div class="course-card reveal">
                     <h3>CS1301: Principles of Computer Science I</h3>
                 </div>
-                <div class="course-card">
+                <div class="course-card reveal">
                     <h3>CS1302: Principles of Computer Science II</h3>
                 </div>
-                <div class="course-card">
+                <div class="course-card reveal">
                     <h3>Calculus I</h3>
                 </div>
-                <div class="course-card">
+                <div class="course-card reveal">
                     <h3>Calculus II</h3>
                 </div>
-                <div class="course-card">
+                <div class="course-card reveal">
                     <h3>Discrete Mathematics</h3>
                 </div>
             </div>
@@ -1287,7 +1423,7 @@
                     💻 github.com/karandeol-26
                 </a>
                 <a href="https://www.linkedin.com/in/karanpratap2611/" class="contact-button">
-                     🧑🏼‍💻 Linkedin.com/karapratap2611   
+                    🧑🏼‍💻 Linkedin.com/karapratap2611
                 </a>
             </div>
         </div>
@@ -1299,5 +1435,65 @@
             <p class="footer-text">© 2025 Karan Pratap Singh. Built with passion.</p>
         </div>
     </footer>
+    <script>
+        // Scroll Reveal
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Typing Effect
+        const textToType = "Aspiring AI/ML Engineer";
+        const typingElement = document.querySelector('.section-badge');
+        let typeIndex = 0;
+
+        function typeText() {
+            if (typeIndex < textToType.length) {
+                typingElement.textContent = textToType.substring(0, typeIndex + 1);
+                typeIndex++;
+                setTimeout(typeText, 100);
+            } else {
+                typingElement.classList.remove('typing-cursor');
+            }
+        }
+
+        // Initialize Typing
+        if (typingElement) {
+            typingElement.textContent = '';
+            typingElement.classList.add('typing-cursor');
+            setTimeout(typeText, 1000);
+        }
+
+        // 3D Tilt Effect (Vanilla JS)
+        document.querySelectorAll('.project-card, .code-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+
+                const rotateX = ((y - centerY) / centerY) * -5; // Max -5deg to 5deg
+                const rotateY = ((x - centerX) / centerX) * 5;
+
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+            });
+        });
+    </script>
 </body>
+
 </html>
