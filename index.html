@@ -969,32 +969,391 @@
             margin-top: 1rem;
         }
 
+        /* ===== Hamburger Menu ===== */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 26px;
+            height: 3px;
+            background: #e8dcc8;
+            border-radius: 3px;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 6px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -6px);
+        }
+
+        /* ===== Mobile — 768px ===== */
         @media (max-width: 768px) {
+
+            html,
+            body {
+                overflow-x: hidden;
+            }
+
+            /* --- Nav --- */
+            .hamburger {
+                display: block;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                padding: 1rem 1.2rem;
+            }
+
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                gap: 0.5rem;
+                padding-top: 1rem;
+            }
+
+            nav ul.open {
+                display: flex;
+            }
+
+            nav a {
+                display: block;
+                text-align: center;
+                padding: 0.8rem 1rem;
+                font-size: 1rem;
+            }
+
+            /* --- Awning --- */
+            .awning {
+                height: 50px;
+                margin-top: 70px;
+            }
+
+            .stripe {
+                min-width: 30px;
+            }
+
+            /* --- Hero --- */
             .hero {
                 grid-template-columns: 1fr;
+                min-height: auto;
+                padding: 2rem 1.2rem;
+                gap: 1.5rem;
+            }
+
+            .hero-left {
+                padding-bottom: 40px;
             }
 
             .hero-title {
-                font-size: 3rem;
+                font-size: 2.8rem;
             }
 
-            .about-content,
+            .hero-tagline {
+                font-size: 1.1rem;
+            }
+
+            .hero-right {
+                padding-top: 0;
+            }
+
+            .code-card {
+                max-width: 100%;
+            }
+
+            .code-body {
+                font-size: 0.75rem;
+                padding: 16px;
+            }
+
+            /* --- LinkedIn CTA --- */
+            .linkedin-cta {
+                padding: 2rem 1rem;
+            }
+
+            .linkedin-cta button {
+                font-size: 1rem;
+                padding: 1rem 2rem;
+            }
+
+            /* --- About --- */
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .about-title {
+                font-size: 2rem;
+            }
+
+            .about-image {
+                padding-bottom: 40px;
+            }
+
+            .profile-badge {
+                max-width: 280px;
+                max-height: 280px;
+            }
+
+            /* --- Sections general --- */
+            #projects,
+            #experience,
+            #skills,
+            #courses,
+            #contact {
+                padding: 3rem 1.2rem;
+            }
+
+            #about {
+                padding: 2rem 1.2rem;
+            }
+
+            .projects-title,
+            .experience-title,
+            .skills-title {
+                font-size: 2.2rem;
+            }
+
             .projects-grid,
             .courses-grid {
                 grid-template-columns: 1fr;
             }
 
+            /* Show "View Project" on mobile (no hover) */
+            .project-card::after {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            /* --- Experience --- */
+            .experience-header h3 {
+                font-size: 1.1rem;
+            }
+
+            .experience-header {
+                padding: 1.2rem 1rem;
+            }
+
+            .experience-details {
+                padding: 1.2rem;
+            }
+
+            /* --- Skills --- */
             .skill-item {
                 grid-template-columns: 1fr;
                 text-align: center;
+                gap: 0.5rem;
+                padding: 1.2rem;
             }
 
             .skill-name {
                 text-align: center;
             }
 
-            nav ul {
-                flex-wrap: wrap;
+            /* --- Courses --- */
+            .courses-title-badge {
+                font-size: 1.3rem;
+                padding: 0.7rem 2rem;
+            }
+
+            .courses-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .course-card {
+                padding: 2rem 1.5rem;
+                min-height: 100px;
+            }
+
+            .course-card h3 {
+                font-size: 1.2rem;
+            }
+
+            /* --- Hackathons --- */
+            #hackathons {
+                min-height: auto;
+                padding: 3rem 1.2rem 2rem;
+            }
+
+            .hackathons-title {
+                font-size: 2.2rem;
+            }
+
+            .photo-container {
+                height: 350px;
+            }
+
+            .photo-orbit {
+                width: 180px;
+                height: 130px;
+                border-radius: 20px;
+            }
+
+            @keyframes floatPhoto1 {
+
+                0%,
+                100% {
+                    transform: translate(-100px, -50px) rotate(-8deg);
+                }
+
+                50% {
+                    transform: translate(-110px, -40px) rotate(-10deg);
+                }
+            }
+
+            @keyframes floatPhoto2 {
+
+                0%,
+                100% {
+                    transform: translate(80px, -20px) rotate(5deg);
+                }
+
+                50% {
+                    transform: translate(90px, -30px) rotate(7deg);
+                }
+            }
+
+            @keyframes floatPhoto3 {
+
+                0%,
+                100% {
+                    transform: translate(-20px, 80px) rotate(-3deg);
+                }
+
+                50% {
+                    transform: translate(-10px, 90px) rotate(-5deg);
+                }
+            }
+
+            /* --- Contact --- */
+            #contact h2 {
+                font-size: 1.5rem !important;
+            }
+
+            .contact-button {
+                width: 100%;
+                justify-content: center;
+                font-size: 0.95rem;
+                padding: 1rem 1.5rem;
+            }
+
+            /* --- Footer --- */
+            footer {
+                padding: 2rem 1rem;
+            }
+
+            .section-badge {
+                font-size: 0.95rem;
+                padding: 0.6rem 1.8rem;
+                letter-spacing: 2px;
+            }
+        }
+
+        /* ===== Small phones — 480px ===== */
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2.2rem;
+            }
+
+            .hero-tagline {
+                font-size: 1rem;
+            }
+
+            .code-body {
+                font-size: 0.7rem;
+                padding: 12px;
+            }
+
+            .about-title {
+                font-size: 1.6rem;
+            }
+
+            .about-text p {
+                font-size: 0.95rem;
+            }
+
+            .profile-badge {
+                max-width: 220px;
+                max-height: 220px;
+            }
+
+            .projects-title,
+            .experience-title,
+            .skills-title {
+                font-size: 1.8rem;
+            }
+
+            .project-card {
+                padding: 1.5rem;
+            }
+
+            .project-card h3 {
+                font-size: 1.4rem;
+            }
+
+            .courses-title-badge {
+                font-size: 1.1rem;
+                padding: 0.6rem 1.5rem;
+            }
+
+            .photo-container {
+                height: 280px;
+            }
+
+            .photo-orbit {
+                width: 140px;
+                height: 100px;
+                border-radius: 15px;
+            }
+
+            @keyframes floatPhoto1 {
+
+                0%,
+                100% {
+                    transform: translate(-70px, -40px) rotate(-6deg);
+                }
+
+                50% {
+                    transform: translate(-80px, -30px) rotate(-8deg);
+                }
+            }
+
+            @keyframes floatPhoto2 {
+
+                0%,
+                100% {
+                    transform: translate(60px, -15px) rotate(4deg);
+                }
+
+                50% {
+                    transform: translate(65px, -25px) rotate(6deg);
+                }
+            }
+
+            @keyframes floatPhoto3 {
+
+                0%,
+                100% {
+                    transform: translate(-10px, 60px) rotate(-2deg);
+                }
+
+                50% {
+                    transform: translate(-5px, 70px) rotate(-4deg);
+                }
             }
         }
 
@@ -1085,6 +1444,11 @@
                 <div class="name">Karan Deol</div>
             </div>
         </div>
+        <button class="hamburger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -1404,6 +1768,25 @@
             <p class="footer-text">© 2025 Karan Pratap Singh. Built with passion.</p>
         </div>
     </footer>
+
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('nav ul');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('open');
+        });
+
+        // Close menu when a nav link is clicked
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('open');
+            });
+        });
+    </script>
 </body>
 
 </html>
